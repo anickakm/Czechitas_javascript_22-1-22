@@ -1,6 +1,10 @@
-let jmeno = 'Petra';
-let vek = 34;
-let vaha = 65;
-let vyska = 1.67;
-let BMI = vaha / (vyska**2);
-console.log('Jmenuji se ' + jmeno + ', je mi ' + vek + ' let a moje BMI je ' + BMI + '.');
+
+let jmeno = prompt('Jak se jmenuješ?');
+let vekString = prompt('Kolik je ti let?');
+let vek = Number(vekString);
+
+if (vek >=18){
+  console.log('Vaše jméno je ' + jmeno + ', váš věk je ' + vek + 'a můžete řídit auto.')
+} else {
+  console.log('Vaše jméno je ' + jmeno + ', váš věk je ' + vek +' a za ' + (18-vek) + 'let budete moct řídit auto.')
+}
